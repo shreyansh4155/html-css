@@ -1,0 +1,88 @@
+/* Layout Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 150px 150px;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / -1;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+
+.article {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.aside {
+  background-color: #e8f5e9;
+  padding: 15px;
+  text-align: left;
+}
+
+.aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aside ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+.nav {
+  background-color: #c8e6c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav a {
+  color: #2e7d32;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
